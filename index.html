@@ -4,38 +4,115 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- custom styleSheet -->
+    <link rel="stylesheet" href="/style.css" />
+    <!-- custom styleSheet -->
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google fonts -->
+
+    <!-- fomt Awesome -->
+    <script
+      src="https://kit.fontawesome.com/a97970ba69.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- fomt Awesome -->
+
     <title>lucky_birthDay</title>
   </head>
   <body>
     <div class="parent">
-      <p class="privacyMsz"></p>
+      <!-- Heading Section -->
       <div class="heading">
         <h1>Is Your Birthday Lucky?</h1>
       </div>
 
+      <!-- Input Section -->
       <div class="inputSection">
+        <div class="privacyMsz">
+          <p>
+            <strong>Privacy Notice! </strong>
+            We are not storing your data
+            <span class="privacyToggler">❌</span>
+          </p>
+        </div>
+
         <h1>Enter Your Birthdate and lucky number to continue...</h1>
+
+        <!-- User Input Section -->
         <div class="userInput">
-          <div class="birthDay">
+          <div class="input-field">
             <h2>Select your Birth date:</h2>
-            <input class="birthDate" type="date">
+            <input class="birthDate" type="date" />
           </div>
 
           <div class="luckyNumber">
-            <h2>Enter your Lucky Number:</h2>
-            <input class="luckyNumberInput" type="number">
+            <div class="input-field">
+              <h2>Enter your Lucky Number:</h2>
+              <input class="luckyNumberInput" type="number" />
+            </div>
           </div>
           <button id="checkBtn" type="button">check</button>
 
-          <div class="luckyMsz"></div>
-          <div class="unluckyMsz"></div>
+          <div class="output_field">
+            <div class="luckyMsz">
+              <p>you are lucky man</p>
+            </div>
+            <div class="unLuckyMsz">
+              <p>hey buddy according to this calculator you are not luckey! but you no what you are super luckey</p>
+            </div>
+          </div>
         </div>
-        <div class="socials">
 
-        </div>
+        <!-- Footer Sectio -->
+        <footer>
+          <ul class="social-links">
+            <li class="icons">
+              <a
+                href="mailto:abhaysinghs772@gmail.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                ><i class="fas fa-envelope fa-1x"></i
+              ></a>
+            </li>
+            <li class="icons">
+              <a
+                href="https://github.com/abhaysinghs772"
+                target="_blank"
+                rel="noreferrer noopener"
+                ><i class="fab fa-github fa-1x"></i
+              ></a>
+            </li>
+            <li class="icons">
+              <a
+                href="https://www.linkedin.com/in/abhay-kumar-669123201/"
+                target="_blank"
+                rel="noreferrer noopener"
+                ><i class="fab fa-linkedin fa-1x"></i
+              ></a>
+            </li>
+            <li class="icons">
+              <a
+                href="https://twitter.com/abhaysinghs772"
+                target="_blank"
+                rel="noreferrer noopener"
+                ><i class="fab fa-twitter fa-1x"></i
+              ></a>
+            </li>
+          </ul>
+        </footer>
       </div>
     </div>
 
+    <!-- main script -->
     <script src="/app.js" defer></script>
+    <!-- main script -->
   </body>
 </html>
