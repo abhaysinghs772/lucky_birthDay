@@ -24,16 +24,18 @@ checkButton.addEventListener('click', () => {
     onlyStrings_Of_birthDate = birthDate.value.replaceAll('-', '');
 
     birth_Date_To_NUmber = Number(onlyStrings_Of_birthDate);
-    console.log(birth_Date_To_NUmber);
+    // console.log(birth_Date_To_NUmber);
 
     luckyNumber_To_Number = Number(luckyNumber.value);
-    console.log(luckyNumber_To_Number);
+    // console.log(luckyNumber_To_Number);
 
     if (birth_Date_To_NUmber % luckyNumber_To_Number === 0) {
-        console.log('you are lucky man');
+        // console.log('you are lucky man');
         showMsz(luckyMessage);
+        hideMsz(unLuckyMessage);
     } else {
-        console.log('hey buddy! you are too lucky man!');
+        // console.log('hey buddy! you are too lucky man!');
+        hideMsz(luckyMessage);
         showMsz(unLuckyMessage);
     }
 });
